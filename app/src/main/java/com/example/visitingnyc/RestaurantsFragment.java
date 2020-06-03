@@ -34,29 +34,23 @@ public class RestaurantsFragment extends Fragment {
 
         // Initialize the restaurants data
         ArrayList<Location> locations = new ArrayList<Location>(){{
-            add(new Location(R.string.res_royal_35_steakhouse));
-            add(new Location(R.string.res_dim_sum_palace));
-            add(new Location(R.string.res_river_cafe));
-            add(new Location(R.string.res_gyu_kaku));
-            add(new Location(R.string.res_luke_lobster));
-            add(new Location(R.string.res_blue_ribbon));
-            add(new Location(R.string.res_emily));
-            add(new Location(R.string.res_le_bernardin));
-            add(new Location(R.string.res_mala_project));
-            add(new Location(R.string.res_lucali));
+            add(new Location(R.string.res_royal_35_steakhouse, R.drawable.res_royal_35_steakhouse));
+            add(new Location(R.string.res_dim_sum_palace, R.drawable.res_dim_sum));
+            add(new Location(R.string.res_river_cafe, R.drawable.res_river_cafe));
+            add(new Location(R.string.res_gyu_kaku, R.drawable.res_gyu_kaku));
+            add(new Location(R.string.res_luke_lobster, R.drawable.res_lukes_lobster));
+            add(new Location(R.string.res_blue_ribbon, R.drawable.res_blue_ribbon));
+            add(new Location(R.string.res_emily, R.drawable.res_emily_burger));
+            add(new Location(R.string.res_le_bernardin, R.drawable.res_le_bernardin));
+            add(new Location(R.string.res_mala_project, R.drawable.res_mala_pot));
+            add(new Location(R.string.res_lucali, R.drawable.res_lucali));
         }};
 
         // Use AdapterView for listView
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_restaurants);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Location loc = (Location) parent.getItemAtPosition(position);
 
-            }
-        });
         return rootView;
     }
 }

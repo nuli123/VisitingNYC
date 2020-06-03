@@ -31,26 +31,20 @@ public class ShoppingFragment extends Fragment {
 
         // Initialize the Shopping data
         ArrayList<Location> locations = new ArrayList<Location>(){{
-            add(new Location(R.string.shopping_5th_avenue));
-            add(new Location(R.string.shopping_macy));
-            add(new Location(R.string.shopping_chelsea_market));
-            add(new Location(R.string.shopping_madison_avenue));
-            add(new Location(R.string.shopping_soho));
-            add(new Location(R.string.shopping_williamsburg));
-            add(new Location(R.string.shopping_union_square));
+            add(new Location(R.string.shopping_5th_avenue, R.drawable.shopping_5th_avenue));
+            add(new Location(R.string.shopping_macy, R.drawable.shopping_macy));
+            add(new Location(R.string.shopping_chelsea_market, R.drawable.shopping_chelsea));
+            add(new Location(R.string.shopping_madison_avenue, R.drawable.shopping_madison));
+            add(new Location(R.string.shopping_soho, R.drawable.shopping_soho));
+            add(new Location(R.string.shopping_williamsburg, R.drawable.shopping_williamsburg));
+            add(new Location(R.string.shopping_union_square, R.drawable.shopping_union_square));
         }};
 
         // Use AdapterView for listView
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_shopping);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Location loc = (Location) parent.getItemAtPosition(position);
 
-            }
-        });
         return rootView;
     }
 }

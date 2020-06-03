@@ -30,26 +30,20 @@ public class CultureFragment extends Fragment {
 
         // Initialize the Culture data
         ArrayList<Location> locations = new ArrayList<Location>(){{
-            add(new Location(R.string.culture_met));
-            add(new Location(R.string.culture_broadway));
-            add(new Location(R.string.culture_moma));
-            add(new Location(R.string.culture_lincoln_center));
-            add(new Location(R.string.culture_carnegie_hall));
-            add(new Location(R.string.culture_botanical_garden));
-            add(new Location(R.string.culture_guggenheim));
+            add(new Location(R.string.culture_met, R.drawable.culture_met));
+            add(new Location(R.string.culture_broadway, R.drawable.culture_broadway));
+            add(new Location(R.string.culture_moma, R.drawable.culture_moma));
+            add(new Location(R.string.culture_lincoln_center, R.drawable.culture_lincoln));
+            add(new Location(R.string.culture_carnegie_hall, R.drawable.culture_carnegiehall));
+            add(new Location(R.string.culture_botanical_garden, R.drawable.culture_newyorkbotanicalgarden));
+            add(new Location(R.string.culture_guggenheim, R.drawable.culture_guggenheim));
         }};
 
         // Use AdapterView for listView
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_culture);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Location loc = (Location) parent.getItemAtPosition(position);
 
-            }
-        });
         return rootView;
     }
 }
