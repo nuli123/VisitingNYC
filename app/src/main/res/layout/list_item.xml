@@ -6,18 +6,24 @@
     android:layout_height="wrap_content"
     >
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
         android:id="@+id/list_item_icon"
         tools:src="@mipmap/ic_launcher"/>
-
-    <TextView
+    <RelativeLayout
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/list_item_height"
         android:layout_weight="1"
         android:paddingLeft="16dp"
-        android:id="@+id/location"
-        tools:text="Empire State Building"/>
+        android:id="@+id/text_container">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/location"
+            tools:text="Empire State Building"/>
+    </RelativeLayout>
 
 
 </LinearLayout>

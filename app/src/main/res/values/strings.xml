@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">VisitingNYC</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_culture">Culture</string>
+    <string name="category_landmarks">Landmarks</string>
+    <string name="category_restaurants">Restaurants</string>
 
     <string name="res_royal_35_steakhouse">Royal 35 Steakhouse</string>
     <string name="res_dim_sum_palace">Dim Sum Palace</string>

@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShoppingActivity"></activity>
-        <activity android:name=".CultureActivity" />
-        <activity android:name=".LandmarksActivity" />
-        <activity android:name=".RestaurantsActivity" />
+        <activity android:name=".ShoppingActivity"
+            android:label="@string/category_shopping"></activity>
+        <activity android:name=".CultureActivity"
+            android:label="@string/category_culture"/>
+        <activity android:name=".LandmarksActivity"
+            android:label="@string/category_landmarks"/>
+        <activity android:name=".RestaurantsActivity"
+            android:label="@string/category_restaurants"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -63,8 +63,9 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         TextView locationText = (TextView) listItemView.findViewById(R.id.location);
         locationText.setText(location.getNameResID());
 
+        View textContainer = listItemView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(),this.mColorRes);
-        locationText.setBackgroundColor(color);
+        textContainer.setBackgroundColor(color);
 
         return listItemView;
     }

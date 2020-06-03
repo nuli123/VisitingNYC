@@ -40,7 +40,7 @@ public class CultureFragment extends Fragment {
         }};
 
         // Use AdapterView for listView
-        LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_landmarks);
+        LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_culture);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
