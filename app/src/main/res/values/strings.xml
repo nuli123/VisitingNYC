@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">VisitingNYC</string>
+
+    <string name="res_royal_35_steakhouse">Royal 35 Steakhouse</string>
+    <string name="res_dim_sum_palace">Dim Sum Palace</string>
+    <string name="res_mala_project">Mala Project</string>
+    <string name="res_gyu_kaku">Gyu-Kaku</string>
+    <string name="res_luke_lobster">Lukes Lobster</string>
+    <string name="res_blue_ribbon">Blue Ribbon Sushi Bar</string>
+    <string name="res_emily">Emily</string>
+    <string name="res_le_bernardin">Le Bernardin</string>
+    <string name="res_river_cafe">The River Cafe</string>
+    <string name="res_lucali">Lucali</string>
+
+    <string name="landmark_statue_liberty">Statue of Liberty National Monument</string>
+    <string name="landmark_empire_state">Empire State Building</string>
+    <string name="landmark_high_line">High Line</string>
+    <string name="landmark_time_squre">Time Square</string>
+    <string name="landmark_brookly_bridge">Brooklyn Bridge</string>
+    <string name="landmark_grand_central">Grand Central Terminal</string>
+    <string name="landmark_wall_street">Wall Street</string>
+    <string name="landmark_rockefeller">Rockefeller Center</string>
+
+    <string name="culture_met">The Metropolitan Museum Of Art</string>
+    <string name="culture_broadway">Broadway</string>
+    <string name="culture_moma">The Museum of Modern Art</string>
+    <string name="culture_lincoln_center">Lincoln Center</string>
+    <string name="culture_carnegie_hall">Carnegie Hall</string>
+    <string name="culture_botanical_garden">New York Botanical Garden</string>
+    <string name="culture_guggenheim">Solomon R. Guggenheim Museum</string>
+
+    <string name="shopping_5th_avenue">5th Avenue</string>
+    <string name="shopping_macy">Macys</string>
+    <string name="shopping_soho">SoHo</string>
+    <string name="shopping_madison_avenue">Madison Avenue</string>
+    <string name="shopping_williamsburg">Williamsburg</string>
+    <string name="shopping_chelsea_market">Chelsea Market</string>
+    <string name="shopping_union_square">Union Square</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
